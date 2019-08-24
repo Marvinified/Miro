@@ -1,0 +1,116 @@
+body {
+  font-family: sans-serif;
+  background: #333333;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+blue {
+  color: #2d9cdbcc;
+  /* font-weight: bold; */
+}
+
+a {
+  text-decoration: none;
+}
+
+text {
+  padding: 50px;
+  color: #f2f2f299;
+  font-size: 20px;
+}
+
+.btn {
+  color: #f2f2f299;
+  cursor: pointer;
+}
+
+span {
+  color: #f2f2f2;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.circle * {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  0% {
+    border: 10px solid #2d9cdb11;
+  }
+  50% {
+    border: 10px solid #2d9cdbcc;
+  }
+  100% {
+    border: 10px solid #2d9cdb11;
+  }
+}
+
+.circle-one {
+  /* animation: 2s ease-in-out 100ms infinite alternate fadeIn; */
+  animation: 3s ease-in-out 1.5s infinite alternate fadeIn;
+}
+
+.circle-two {
+  animation: 3s ease-in-out 1s infinite alternate fadeIn;
+}
+
+.circle-three {
+  /* animation: 2s ease-in-out infinite alternate fadeIn; */
+  animation: 3s ease-in-out 0.5s infinite alternate fadeIn;
+}
+
+.motion {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes shrink {
+  0% {
+    height: 100px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+.bar {
+  background: #c4c4c4;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+  width: 15px;
+  height: 100px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+#one {
+  animation: shrink 1.5s linear infinite alternate both;
+}
+#two {
+  animation: shrink 1.5s linear 0.75s infinite alternate both;
+}

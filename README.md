@@ -1,2 +1,0 @@
-# Miro
-Created with CodeSandbox
